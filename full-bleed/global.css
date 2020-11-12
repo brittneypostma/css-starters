@@ -1,0 +1,60 @@
+:root {
+  --black: #111;
+  --blue: #5fc7e4;
+  --caribbean: #00e0ff;
+  --light-blue: #e8f4f4;
+  --navy: #1b2a49;
+  --teal: #036c8b;
+  --yellow: #e5a91e;
+  --white: #eee;
+
+  --gap: 1rem;
+  --rowGap: 2.5rem;
+
+  --bg: var(--light-blue);
+  --primary: var(--blue);
+  --secondary: var(--teal);
+  --text: var(--navy);
+  --accent: var(--caribbean);
+  --focus: var(--yellow);
+
+  --transition: 0.2s all ease-in-out;
+
+  --smShadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.25);
+  --mdShadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.25);
+  --lgShadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --focusShadow: 0 0 0 3px var(--focus);
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(33, 47, 79, 0.5);
+}
+
+body {
+  color: var(--text);
+  font-size: clamp(100%, 1rem + 0.25vw, 2rem);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading);
+}
+
+h1 {
+  font-size: clamp(2rem, 2rem + 1vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 1.5rem + 1vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 1.25rem + 0.75vw, 2.25rem);
+}
