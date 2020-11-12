@@ -86,3 +86,10 @@ main > * {
   padding: var(--gap);
   margin: 0 auto;
 }
+
+button,
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--focus);
+}
